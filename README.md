@@ -1,4 +1,4 @@
-# interaction-aware_factorization_machine(https://arxiv.org/abs/1902.09757)
+# interaction-aware_factorization_machine
 
 This is our implementation for the paper(https://arxiv.org/abs/1902.09757) based on
 [Attentional Factorization Machines](https://github.com/hexiangnan/attentional_factorization_machine)
