@@ -1,4 +1,4 @@
-# interaction-aware_factorization_machine
+# interaction-aware_factorization_machine(https://arxiv.org/abs/1902.09757)
 
 This is our implementation for the paper(https://arxiv.org/abs/1902.09757) based on
 [Attentional Factorization Machines](https://github.com/hexiangnan/attentional_factorization_machine)
@@ -38,3 +38,33 @@ python IFM.py --dataset ml-tag --epoch 100 --pretrain 1 --batch_size 4096 --hidd
 The instruction of commands has been clearly stated in the codes (see the parse_args function).
 
 The current implementation supports regression classification, which optimizes RMSE.
+
+## Large CTR prediction
+A reference implementation of DeepIFM is also released. The usage example:
+```
+model_params = {
+            "wide_columns": wide_columns,
+            "deep_columns": deep_columns,
+            "learning_rate": 0.001,
+            "batch_norm_decay": 0.999,
+            "l2_reg": 0.001,
+            "interaction_factor_hidden": 6,
+            "attention_size": 16,
+            'embedding_size': self.feature.embedding_size,
+            'lamda_factorization': 0.001,
+            'lamda_attention': 0.001,
+            'dim_to_field': self.feature.dim_to_field,
+            'num_samples': 0.1,
+            'temperature': 10,
+            'num_field': len(self.feature.SELECTED),
+            "deep_layers": '100,75,50',
+            'dropout': 0.7,
+            "optimizer": 'Adagrad',
+            "batch_norm": False
+        }
+
+sifm_network.SIFMNetwork(
+            model_dir=model_dir,
+            model_params=model_params,
+            config=run_config)
+```
