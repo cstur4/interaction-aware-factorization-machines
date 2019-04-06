@@ -284,9 +284,9 @@ class FM(BaseEstimator, TransformerMixin):
 #             if self.eva_termination(self.valid_rmse):
 #                 break
 # 
-#         if self.pretrain_flag < 0:
-#             print("Save model to file as pretrain.")
-#             self.saver.save(self.sess, self.save_file)
+         if self.pretrain_flag < 0:
+             print("Save model to file as pretrain.")
+             self.saver.save(self.sess, self.save_file)
 
     def eva_termination(self, valid):
         if len(valid) > 5:
