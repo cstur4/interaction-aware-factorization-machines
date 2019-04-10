@@ -5,8 +5,6 @@ This is our implementation for the paper (Interaction-aware Factorization Machin
 
 **Please cite our [AAAI'19 paper](https://www.aaai.org/Papers/AAAI/2019/AAAI-HongF.793.pdf) if you use our codes. Thanks!**
 
-The usage of IFM is similar to AFM.
-
 ## Environments
 * Tensorflow (version: 1.0.1)
 * numpy
