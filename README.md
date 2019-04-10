@@ -1,4 +1,4 @@
-# [interaction-aware_factorization_machine for recommender systems](https://www.aaai.org/Papers/AAAI/2019/AAAI-HongF.793.pdf)
+# [interaction-aware factorization machines for recommender systems](https://www.aaai.org/Papers/AAAI/2019/AAAI-HongF.793.pdf)
 
 This is our implementation for the paper (Interaction-aware Factorization Machines for Recommender Systems) based on
 [Attentional Factorization Machines](https://github.com/hexiangnan/attentional_factorization_machine)
