@@ -1,6 +1,6 @@
 # interaction-aware_factorization_machine(https://arxiv.org/abs/1902.09757)
 
-This is our implementation for the paper(https://arxiv.org/abs/1902.09757) based on
+This is our implementation for the paper(https://arxiv.org/abs/1902.09757) (Interaction-aware Factorization Machines for Recommender Systems) based on
 [Attentional Factorization Machines](https://github.com/hexiangnan/attentional_factorization_machine)
 
 **Please cite our AAAI'19 paper if you use our codes. Thanks!**
