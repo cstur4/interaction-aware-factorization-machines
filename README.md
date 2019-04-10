@@ -3,7 +3,7 @@
 This is our implementation for the paper(https://arxiv.org/abs/1902.09757) (Interaction-aware Factorization Machines for Recommender Systems) based on
 [Attentional Factorization Machines](https://github.com/hexiangnan/attentional_factorization_machine)
 
-**Please cite our AAAI'19 paper if you use our codes. Thanks!**
+**Please cite our [AAAI'19 paper](https://www.aaai.org/Papers/AAAI/2019/AAAI-HongF.793.pdf) if you use our codes. Thanks!**
 
 The usage of IFM is similar to AFM.
 
