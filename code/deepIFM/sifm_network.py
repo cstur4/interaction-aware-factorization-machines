@@ -165,7 +165,7 @@ class SIFMNetwork(estimator.Estimator):
 
                 self.attention_interaction = tf.matmul(self.field_interactions, self.weights['factor'])
 
-                num_samples = int(num_interaction * model_params.get('num_samples', 0.8))  # tf.where(tf.greater(tf.train.get_global_step(), 2000), 45, 25)
+                num_samples = int(num_interaction * model_params.get('num_samples', 0.1))  # tf.where(tf.greater(tf.train.get_global_step(), 2000), 45, 25)
 
                 analysis = tf.square(self.attention_interaction)
                 norm = tf.reduce_sum(analysis, axis=1)
@@ -188,7 +188,7 @@ class SIFMNetwork(estimator.Estimator):
                                   self.weights['attention_W']), shape=[-1, num_samples, model_params['attention_size']])
                     self.attention_mul = self.attention_mul / model_params['temperature']
                     self.attention_exp = tf.exp(
-                        tf.reduce_sum(tf.multiply(self.weights['attention_p'], tf.nn.relu(self.attention_mul + \
+                        tf.reduce_sum(tf.multiply(self.weights['attention_p'], tf.nn.tanh(self.attention_mul + \
                                                                                           self.weights['attention_b'])),
                                       2, keep_dims=True))  # None * (M'*(M'-1)) * 1
                     self.attention_sum = tf.reduce_sum(self.attention_exp, 1, keep_dims=True)  # None * 1 * 1
