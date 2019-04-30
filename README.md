@@ -32,6 +32,9 @@ cd code
 python FM.py --dataset ml-tag --epoch 100 --pretrain -1 --batch_size 4096 --hidden_factor 256 --lr 0.01 --keep 0.3
 # train IFM model using the pretrained weights from FM
 python IFM.py --dataset ml-tag --epoch 100 --pretrain 1 --batch_size 4096 --hidden_factor [8,256] --keep [1.0,0.9] --temp 10 --lr 0.1 --lamda_attention1 0.01
+# train INN model using the pretrained weights from FM
+python INN.py --dataset ml-tag --epoch 100 --pretrain 1 --batch_size 4096 --hidden_factor [8,256] --keep [1.0,0.9] --temp 10 --lr 0.1 --lamda_attention1 0.01
+
 ```
 The instruction of commands has been clearly stated in the codes (see the parse_args function).
 
