@@ -3,7 +3,7 @@
 This is our implementation for the paper (Interaction-aware Factorization Machines for Recommender Systems) based on
 [Attentional Factorization Machines](https://github.com/hexiangnan/attentional_factorization_machine)
 
-**Please cite our [AAAI'19 paper](https://www.aaai.org/Papers/AAAI/2019/AAAI-HongF.793.pdf) if you use our codes. Thanks!**
+**Please cite our [AAAI'19 paper](https://aaai.org/ojs/index.php/AAAI/article/view/4267) if you use our codes. Thanks!**
 
 ## Environments
 * Tensorflow
